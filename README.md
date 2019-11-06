@@ -1,5 +1,5 @@
-# OpenShift ttyd client
-Containerized OpenShift CLI tools accessible via ttyd
+# Openshift 101 Workshop TTY and Jenkins
+Containerized OpenShift CLI tools accessible via ttyd for 101 Workshop
 
 ## What is this?
 This provides a web console to a pod with the oc CLI tool available. That's it. 
@@ -8,7 +8,7 @@ Need oc but don't have a terminal or the ability to install anything? Just run t
 
 AND 
 
-for Openshift101, this will also provision ephemeral Jenkins 
+for this script will also provision ephemeral Jenkins 
 
 ## How do I use this?
 
