@@ -18,7 +18,7 @@ hostname=openshiftcluster.url.com
 username=admin
 password=password
 begin=1
-count=20
+end=20
 ```
 
 ```
