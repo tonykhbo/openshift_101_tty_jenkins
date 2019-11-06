@@ -6,26 +6,22 @@ This provides a web console to a pod with the oc CLI tool available. That's it.
 
 Need oc but don't have a terminal or the ability to install anything? Just run this as a pod in your project - or run it to share for a whole team.
 
+AND 
+
+for Openshift101, this will also provision ephemeral Jenkins 
+
 ## How do I use this?
 
-* Create a project in openshift : 
-```sh
-oc new-project occli
+* Modify the init.sh script (20 users): 
+```
+hostname=openshiftcluster.url.com
+username=admin
+password=password
+begin=1
+count=20
 ```
 
-* Deploy the OpenShift template : 
->`oc new-app -f https://raw.githubusercontent.com/roller1187/openshift-ttyd-client/master/openshift-ttyd-client.json`
-
-### OR deploy ttyd from the prebuilt image (ALTERNATIVE) : 
-    * Deploy app : 
-    > `oc new-app quay.io/aromerot/openshift-ttyd-client
-
-    * Expose route : 
-    > `oc expose svc/openshift-ttyd-client --port 8080` 
-
-* Navigate to the exposed route and login to your OpenShift cluster of choice using the oc command:
->`oc login https://mycluster.awesomeland.com`
-
-* Run whatever commands you want:
->`oc get pods --all-namespaces`
+```
+$./create-tty.sh
+```
 
