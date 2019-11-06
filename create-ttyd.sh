@@ -9,7 +9,7 @@ done
 DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 source "$DIR/init.sh"
 
-for (( i = $begin; i <= $count; i++ )); do
+for (( i = $begin; i <= $endt; i++ )); do
 oc login "$hostname" --insecure-skip-tls-verify -u "$username${i}" -p "$password"
 oc new-project tty-terminal-$i
 oc project tty-terminal-$i
