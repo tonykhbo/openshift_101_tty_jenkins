@@ -1,8 +1,8 @@
 #!/bin/bash
 
-hostname=https://master.hud-27e0.open.redhat.com/
-password=openshift
-username=user
+hostname=https://url.redhat.com/
+password=
+username=
 begin=1
-count=34
+count=20
 pause=5
