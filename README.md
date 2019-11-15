@@ -13,6 +13,7 @@ for this script will also provision ephemeral Jenkins
 ## How do I use this?
 
 * Modify the init.sh script (20 users): 
+If usernames are (user1, user2, user3, etc), then username=user
 ```
 hostname=openshiftcluster.url.com
 username=admin
